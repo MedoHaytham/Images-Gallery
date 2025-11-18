@@ -90,7 +90,6 @@ function countdown(duration) {
     if(--time < 0) {
       clearInterval(countdownInterval);
       currentImg = (currentImg + 1) % imgs.length;
-      console.log(currentImg);
       updateSlider();
       countdown(duration);
     }
