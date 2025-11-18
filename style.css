@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, Arial;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(imgs/cover-2.jpg);
+  background-size: cover;
+  background-color: rgba(0,0,0,.8);
+}
+
+.container {
+  width: 800px;
+  height: 450px;
+  position: relative;
+}
+
+.container .slide-num {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 20px;
+  z-index: 999;
+}
+
+.container img:not(.icon) {
+  position: absolute;
+  opacity: 0;
+  border: 3px solid white;
+  transition: opacity 1s;
+  z-index: 1;
+  background-size: cover;
+}
+
+.container img.active {
+  opacity: 1;
+}
+
+.indicators {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prev,
+.next {
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  z-index: 9999999999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.prev:hover,
+.next:hover {
+  opacity: 1;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: -2px;
+}
+
+
+.prev.disabled,
+.next.disabled {
+  opacity: 0;
+}
+
+.indicators ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.indicators ul li {
+  background-color: #eee;
+  width: 28px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.indicators ul li.on {
+  background-color: #028989;
+  color: white;
+}
+
+
+
+
+
+
+
