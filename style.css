@@ -47,14 +47,6 @@ body {
   opacity: 1;
 }
 
-.indicators ul {
-  width: 806px;
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .prev,
 .next {
   width: 60px;
@@ -88,6 +80,8 @@ body {
 }
 
 .indicators ul {
+  width: 806px;
+  margin-top: 15px;
   list-style: none;
   display: flex;
   justify-content: center;
