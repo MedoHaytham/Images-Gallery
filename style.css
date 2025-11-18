@@ -84,6 +84,7 @@ body {
   margin-top: 15px;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 5px;
