@@ -47,7 +47,8 @@ body {
   opacity: 1;
 }
 
-.indicators {
+.indicators ul {
+  width: 806px;
   margin-top: 15px;
   display: flex;
   justify-content: center;
